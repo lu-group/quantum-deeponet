@@ -1,41 +1,39 @@
-import sys
 import numpy as np
-sys.path.append('/mnt/crucial/pengpengxiao/workplace')
-from quantum_layer_infinite import tomo_output
+from quantum_layer_ideal import tomo_output
 from qiskit.providers.aer import AerSimulator
 import joblib
 
-branch_hidden0_bias = np.loadtxt(r'classical_training/branch.hidden_layers.0.bias.txt')
-branch_hidden0_thetas = np.loadtxt(r'classical_training/branch.hidden_layers.0.thetas.txt')
-branch_hidden1_bias = np.loadtxt(r'classical_training/branch.hidden_layers.1.bias.txt')
-branch_hidden1_thetas = np.loadtxt(r'classical_training/branch.hidden_layers.1.thetas.txt')
-branch_hidden2_bias = np.loadtxt(r'classical_training/branch.hidden_layers.2.bias.txt')
-branch_hidden2_thetas = np.loadtxt(r'classical_training/branch.hidden_layers.2.thetas.txt')
-branch_hidden3_bias = np.loadtxt(r'classical_training/branch.hidden_layers.3.bias.txt')
-branch_hidden3_thetas = np.loadtxt(r'classical_training/branch.hidden_layers.3.thetas.txt')
-branch_hidden4_thetas = np.loadtxt(r'classical_training/branch.hidden_layers.4.thetas.txt')
-branch_hidden4_bias = np.loadtxt(r'classical_training/branch.hidden_layers.4.bias.txt')
-branch_hidden5_thetas = np.loadtxt(r'classical_training/branch.hidden_layers.5.thetas.txt')
-branch_hidden5_bias = np.loadtxt(r'classical_training/branch.hidden_layers.5.bias.txt')
-branch_output_bias = np.loadtxt(r'classical_training/branch.output_layer.bias.txt')
-branch_output_weight = np.loadtxt(r'classical_training/branch.output_layer.weight.txt')
+branch_hidden0_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.0.bias.txt')
+branch_hidden0_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.0.thetas.txt')
+branch_hidden1_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.1.bias.txt')
+branch_hidden1_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.1.thetas.txt')
+branch_hidden2_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.2.bias.txt')
+branch_hidden2_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.2.thetas.txt')
+branch_hidden3_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.3.bias.txt')
+branch_hidden3_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.3.thetas.txt')
+branch_hidden4_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.4.thetas.txt')
+branch_hidden4_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.4.bias.txt')
+branch_hidden5_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.5.thetas.txt')
+branch_hidden5_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.5.bias.txt')
+branch_output_bias = np.loadtxt(r'/classical_training/branch.output_layer.bias.txt')
+branch_output_weight = np.loadtxt(r'/classical_training/branch.output_layer.weight.txt')
 
-trunk_hidden0_bias = np.loadtxt(r'classical_training/trunk.hidden_layers.0.bias.txt')
-trunk_hidden0_thetas = np.loadtxt(r'classical_training/trunk.hidden_layers.0.thetas.txt')
-trunk_hidden1_bias = np.loadtxt(r'classical_training/trunk.hidden_layers.1.bias.txt')
-trunk_hidden1_thetas = np.loadtxt(r'classical_training/trunk.hidden_layers.1.thetas.txt')
-trunk_hidden2_bias = np.loadtxt(r'classical_training/trunk.hidden_layers.2.bias.txt')
-trunk_hidden2_thetas = np.loadtxt(r'classical_training/trunk.hidden_layers.2.thetas.txt')
-trunk_hidden3_bias = np.loadtxt(r'classical_training/trunk.hidden_layers.3.bias.txt')
-trunk_hidden3_thetas = np.loadtxt(r'classical_training/trunk.hidden_layers.3.thetas.txt')
-trunk_hidden4_thetas = np.loadtxt(r'classical_training/trunk.hidden_layers.4.thetas.txt')
-trunk_hidden4_bias = np.loadtxt(r'classical_training/trunk.hidden_layers.4.bias.txt')
-trunk_hidden5_thetas = np.loadtxt(r'classical_training/trunk.hidden_layers.5.thetas.txt')
-trunk_hidden5_bias = np.loadtxt(r'classical_training/trunk.hidden_layers.5.bias.txt')
-trunk_output_bias = np.loadtxt(r'classical_training/trunk.output_layer.bias.txt')
-trunk_output_weight = np.loadtxt(r'classical_training/trunk.output_layer.weight.txt')
+trunk_hidden0_bias = np.loadtxt(r'/classical_training/trunk.hidden_layers.0.bias.txt')
+trunk_hidden0_thetas = np.loadtxt(r'/classical_training/trunk.hidden_layers.0.thetas.txt')
+trunk_hidden1_bias = np.loadtxt(r'/classical_training/trunk.hidden_layers.1.bias.txt')
+trunk_hidden1_thetas = np.loadtxt(r'/classical_training/trunk.hidden_layers.1.thetas.txt')
+trunk_hidden2_bias = np.loadtxt(r'/classical_training/trunk.hidden_layers.2.bias.txt')
+trunk_hidden2_thetas = np.loadtxt(r'/classical_training/trunk.hidden_layers.2.thetas.txt')
+trunk_hidden3_bias = np.loadtxt(r'/classical_training/trunk.hidden_layers.3.bias.txt')
+trunk_hidden3_thetas = np.loadtxt(r'/classical_training/trunk.hidden_layers.3.thetas.txt')
+trunk_hidden4_thetas = np.loadtxt(r'/classical_training/trunk.hidden_layers.4.thetas.txt')
+trunk_hidden4_bias = np.loadtxt(r'/classical_training/trunk.hidden_layers.4.bias.txt')
+trunk_hidden5_thetas = np.loadtxt(r'/classical_training/trunk.hidden_layers.5.thetas.txt')
+trunk_hidden5_bias = np.loadtxt(r'/classical_training/trunk.hidden_layers.5.bias.txt')
+trunk_output_bias = np.loadtxt(r'/classical_training/trunk.output_layer.bias.txt')
+trunk_output_weight = np.loadtxt(r'/classical_training/trunk.output_layer.weight.txt')
 
-b = np.loadtxt(r'classical_training/b.txt')
+b = np.loadtxt(r'/classical_training/b.txt')
 
 simulator = AerSimulator(device='GPU')
 
@@ -58,7 +56,7 @@ def branch_transform(x):
     x = np.concatenate((x, x_d1), axis=1)
     return x
 
-loaded_pca = joblib.load('classical_training/pca_model.joblib')
+loaded_pca = joblib.load('/classical_training/pca_model.joblib')
 
 x_test = (branch_transform(loaded_pca.transform(x_test0[0])),trunk_transform(x_test0[1]))
 
