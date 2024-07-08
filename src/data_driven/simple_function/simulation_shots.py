@@ -1,6 +1,6 @@
 import numpy as np
 from qiskit_aer import AerSimulator
-from quantum_layer_shots import tomo_output
+from ...quantum_layer_shots import tomo_output
 
 # simple function N2_[2,3,3,1],'tanh',80,50000,264.8s,\math-container{0.149%}
 hidden_layers0_thetas = np.loadtxt(r'/classical_training/hidden_layers.0.thetas.txt')

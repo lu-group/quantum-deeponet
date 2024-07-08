@@ -1,9 +1,9 @@
-from quantum_layer_noise import tomo_output
 import numpy as np
-import matplotlib.pyplot as plt
 from qiskit_aer import AerSimulator
 from qiskit_ibm_provider import IBMProvider
 from qiskit_aer.noise import NoiseModel, depolarizing_error
+from ...quantum_layer_noise import tomo_output
+
 
 
 

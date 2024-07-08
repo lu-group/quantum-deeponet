@@ -1,6 +1,7 @@
 import numpy as np
-from quantum_layer_ideal import tomo_output
 from qiskit.providers.aer import AerSimulator
+from ...quantum_layer_ideal import tomo_output
+
 
 branch_hidden0_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.0.bias.txt')
 branch_hidden0_thetas = np.loadtxt(r'/classical_training/branch.hidden_layers.0.thetas.txt')

@@ -1,9 +1,8 @@
 import numpy as np
-from quantum_layer_noise import tomo_output
 from qiskit.providers.aer import AerSimulator
-import matplotlib.pyplot as plt
 from qiskit_ibm_provider import IBMProvider
 from qiskit_aer.noise import NoiseModel,depolarizing_error
+from ...quantum_layer_noise import tomo_output
 
 
 branch_hidden0_bias = np.loadtxt(r'/classical_training/branch.hidden_layers.0.bias.txt')

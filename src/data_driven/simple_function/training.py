@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import deepxde as dde
 import torch
-from classical_orthogonal_NN import OrthoNN
+from ...classical_orthogonal_NN import OrthoNN
 
 def func(x):
     return 1/(1+25*x**2)

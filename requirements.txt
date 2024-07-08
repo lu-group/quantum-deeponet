@@ -4,5 +4,6 @@ torch
 sklearn
 matplotlib
 cvxopt
+joblib
 qiskit
 qiskit_ibm_provider

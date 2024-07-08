@@ -1,12 +1,10 @@
 import torch 
 import numpy as np
 import deepxde as dde
-import sys
-# from VanillaNet import OrthoONetCartesianProd
 import os
 os.environ['DDE_BACKEND'] = 'pytorch'
-from classical_orthogonal_deeponet import OrthoONetCartesianProd
-from physics_informed_zcs import PDE_OP, Model, LazyGrad
+from ...classical_orthogonal_deeponet import OrthoONetCartesianProd
+from ...physics_informed_zcs import PDE_OP, Model, LazyGrad
     
 class  OrthoONetCartesianProd_DBC(OrthoONetCartesianProd):
     def __init__(

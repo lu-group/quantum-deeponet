@@ -5,7 +5,7 @@ import numpy as np
 from deepxde.backend import torch
 import deepxde.nn.activations as activations
 import deepxde.nn.initializers as initializers
-from classical_res_ortho_deeponet import ResOrthoONetCartesianProd
+from ...classical_res_ortho_deeponet import ResOrthoONetCartesianProd
     
 def periodic(x):
     return np.concatenate([np.cos(x[:,0:1]*2*np.pi),
