@@ -44,7 +44,7 @@ def main():
         X_train = x_train, y_train = y_train, X_test = x_test, y_test = y_test
     )
     #choose network
-    m = 21
+    m = 20
     dim_x = 2
     net = ResOrthoONetCartesianProd(
         [m+1,21,21,21,21,21,21,21],
@@ -56,11 +56,11 @@ def main():
     model.compile('adam',lr=0.0005,metrics=['mean l2 relative error'])
     losshistory, train_state = model.train(iterations=40000,disregard_previous_best = True)
 
-    dde.utils.external.save_loss_history(losshistory,r'classical_training/loss_history.txt' )
+    dde.utils.external.save_loss_history(losshistory,r'/classical_training/loss_history.txt' )
     dde_model = model.net
-    model.save(r'classical_training/model_checkpoint')
+    model.save(r'/classical_training/model_checkpoint')
     for name,param in dde_model.named_parameters():
-        np.savetxt(fr'classical_training/{name}.txt',param.cpu().detach().numpy())
+        np.savetxt(fr'/classical_training/{name}.txt',param.cpu().detach().numpy())
 
 if __name__ == "__main__":
     main()

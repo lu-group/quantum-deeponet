@@ -76,7 +76,7 @@ branch_outputs, trunk_outputs = [], []
 
 for x_branch0 in x_test[0]:
     x_branch = x_branch0
-    x_branch = silu(tomo_output(10+1,20, x_branch, branch_hidden0_thetas,simulator)+branch_hidden0_bias)
+    x_branch = silu(tomo_output(20+1,20, x_branch, branch_hidden0_thetas,simulator)+branch_hidden0_bias)
     
     x_branch = silu(tomo_output(20,20, x_branch, branch_hidden1_thetas,simulator)+branch_hidden1_bias) + \
         x_branch/np.linalg.norm(x_branch)
@@ -96,7 +96,7 @@ for x_branch0 in x_test[0]:
 
 
 for x_trunk in x_test[1]:
-    x_trunk = silu(tomo_output(1+1,20, x_trunk, trunk_hidden0_thetas,simulator)+trunk_hidden0_bias)
+    x_trunk = silu(tomo_output(6,20, x_trunk, trunk_hidden0_thetas,simulator)+trunk_hidden0_bias)
     
     x_trunk = silu(tomo_output(20,20, x_trunk, trunk_hidden1_thetas,simulator)+trunk_hidden1_bias) + \
         x_trunk/np.linalg.norm(x_trunk)
