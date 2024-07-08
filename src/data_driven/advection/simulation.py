@@ -1,6 +1,4 @@
-import sys
 import numpy as np
-sys.path.append('/home/pengpengxiao/workplace/')
 from quantum_layer_infinite import tomo_output
 from qiskit.providers.aer import AerSimulator
 

@@ -20,3 +20,7 @@
 ### Physics-informed
 - [ODE](src/physics_informed/ode/)
 - [Poisson's equation](src/physics_informed/poisson/)
+
+## Question
+
+To get help on how to use the data or code, simply open an issue in the GitHub "Issues" section.
