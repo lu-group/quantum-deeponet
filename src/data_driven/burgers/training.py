@@ -1,10 +1,9 @@
 import os
 os.environ['DDE_BACKEND'] = 'pytorch'
-import deepxde as dde
+
 import numpy as np
-from deepxde.backend import torch
-import deepxde.nn.activations as activations
-import deepxde.nn.initializers as initializers
+import deepxde as dde
+
 from ...classical_res_ortho_deeponet import ResOrthoONetCartesianProd
     
 def periodic(x):

@@ -1,8 +1,10 @@
 import os
 os.environ['DDE_BACKEND'] = 'pytorch'
+
 import deepxde as dde
 import numpy as np
 from deepxde.backend import torch
+
 from ...classical_orthogonal_NN import OrthoNN
 
 #complex example

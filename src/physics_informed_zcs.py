@@ -1,10 +1,11 @@
+import joblib
+from typing import Tuple
+
 import torch
 import numpy as np
 import deepxde as dde
-from sklearn.decomposition import PCA
-import joblib
 import deepxde.backend as bkd
-from typing import Tuple
+from sklearn.decomposition import PCA
 
 
 class PDE_OP(dde.data.PDEOperatorCartesianProd):

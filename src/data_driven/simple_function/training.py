@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import deepxde as dde
 import torch
 from ...classical_orthogonal_NN import OrthoNN

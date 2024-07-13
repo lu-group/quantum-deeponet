@@ -1,9 +1,10 @@
 import os
 os.environ['DDE_BACKEND'] = 'pytorch'
+
 import deepxde as dde
-import numpy as np
 from deepxde.backend import torch
 import deepxde.nn.activations as activations
+
 from classical_orthogonal_layer import OrthoLayer
 
 class ResOrthoNN(dde.nn.pytorch.NN): 

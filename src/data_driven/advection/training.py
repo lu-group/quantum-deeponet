@@ -1,11 +1,10 @@
 import os
 os.environ['DDE_BACKEND'] = 'pytorch'
-import deepxde as dde
+
 import numpy as np
-from deepxde.backend import torch
-import deepxde.nn.activations as activations
-import deepxde.nn.initializers as initializers
-from ...classical_res_ortho_deeponet import ResOrthoONetCartesianProd  
+import deepxde as dde
+
+from ...classical_res_ortho_deeponet import ResOrthoONetCartesianProd
 
 def trunk_transform(x, trunk_min, trunk_max):
     d = x.shape[1]

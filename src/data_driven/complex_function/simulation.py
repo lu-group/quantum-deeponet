@@ -1,7 +1,6 @@
 import numpy as np
 from quantum_layer_ideal import tomo_output
 from qiskit.providers.aer import AerSimulator
-import matplotlib.pyplot as plt
 
 # Load parameters
 

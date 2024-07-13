@@ -1,8 +1,10 @@
+import os
+os.environ['DDE_BACKEND'] = 'pytorch'
+
 import torch 
 import numpy as np
 import deepxde as dde
-import os
-os.environ['DDE_BACKEND'] = 'pytorch'
+
 from ...classical_orthogonal_deeponet import OrthoONetCartesianProd
 from ...physics_informed_zcs import PDE_OP, Model, LazyGrad
 
