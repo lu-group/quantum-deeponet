@@ -1,4 +1,4 @@
-# Quantum accelerated DeepONet learning operators
+# Quantum DeepONet: Neural operators accelerated by quantum computing
 
 
 ## Datasets

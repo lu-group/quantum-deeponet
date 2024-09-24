@@ -5,5 +5,8 @@ sklearn
 matplotlib
 cvxopt
 joblib
-qiskit
-qiskit_ibm_provider
+qiskit==0.45.0
+qiskit-aer==0.13.0
+qiskit-aer-gpu==0.11.2
+qiskit-ibm-runtime==0.20.0
+qiskit_ibm_provider==0.8.0
