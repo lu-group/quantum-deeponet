@@ -38,8 +38,6 @@ If you use this data or code for academic research, you are encouraged to cite t
 }
 ```
 
-> Please align the `=`; 2-space indentation.
-
 ## Question
 
 To get help on how to use the data or code, simply open an issue in the GitHub "Issues" section.
