@@ -1,7 +1,7 @@
 deepxde==1.10.1
 numpy
 torch
-sklearn
+scikit-learn
 matplotlib
 cvxopt
 joblib

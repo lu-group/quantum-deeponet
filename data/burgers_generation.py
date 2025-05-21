@@ -51,8 +51,8 @@ def gen_train(n_branch=28, n_trunk = 50, N_train = 500,T = 1, nx = 201, nt = 200
 
     y = s[:, index_x][:,:,index_t].reshape(N_train, n_trunk * n_trunk)
 
-    np.savez(f"l={length_scale}_n={n_branch,n_trunk}_data/Burgers_train_full.npz", X_train=sensor_values, y_train=s,)
-    np.savez(f"l={length_scale}_n={n_branch,n_trunk}_data/Burgers_train.npz", X_train0=X_branch, X_train1=X_trunk, y_train=y,)
+    np.savez(f"/work/pengpeng/quantum-deeponet/quantum-deeponet/data/burgers_data/Burgers_train_full.npz", X_train=sensor_values, y_train=s,)
+    np.savez(f"/work/pengpeng/quantum-deeponet/quantum-deeponet/data/burgers_data/Burgers_train.npz", X_train0=X_branch, X_train1=X_trunk, y_train=y,)
 
 def gen_test(n_branch=28, n_trunk = 50, N_test = 100,T = 1, nx = 201, nt = 20001,  length_scale = 1):
     # T is the periodicity, n is the number of sensors we picked out
@@ -77,8 +77,8 @@ def gen_test(n_branch=28, n_trunk = 50, N_test = 100,T = 1, nx = 201, nt = 20001
 
     y = s[:, index_x][:,:,index_t].reshape(N_test, n_trunk * n_trunk)
 
-    np.savez_compressed(f"l={length_scale}_n={n_branch,n_trunk}_data/Burgers_test_full.npz", X_test=sensor_values, y_test=s,)
-    np.savez_compressed(f"l={length_scale}_n={n_branch,n_trunk}_data/Burgers_test.npz", X_test0=X_branch, X_test1=X_trunk, y_test=y,)
+    np.savez_compressed(f"/work/pengpeng/quantum-deeponet/quantum-deeponet/data/burgers_data/Burgers_test_full.npz", X_test=sensor_values, y_test=s,)
+    np.savez_compressed(f"/work/pengpeng/quantum-deeponet/quantum-deeponet/data/burgers_data/Burgers_test.npz", X_test0=X_branch, X_test1=X_trunk, y_test=y,)
 
 if __name__ == '__main__':
     gen_train(n_branch=20, n_trunk = 50,length_scale=1.5)

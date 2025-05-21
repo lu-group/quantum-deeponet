@@ -1,5 +1,3 @@
-> Under Construction
-
 # Quantum DeepONet: Neural operators accelerated by quantum computing
 
 ## Datasets
@@ -37,8 +35,6 @@ If you use this data or code for academic research, you are encouraged to cite t
       url           =  {https://arxiv.org/abs/2409.15683}, 
 }
 ```
-
-> Please align the `=`; 2-space indentation.
 
 ## Question
 
