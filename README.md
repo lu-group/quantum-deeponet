@@ -12,12 +12,12 @@
 ### Data-driven
 - [Function 1](src/data_driven/simple_function)
 - [Function 2](src/data_driven/complex_function)
-- [Antiderivative](src/data_driven/ode)
+- [Antiderivative](src/data_driven/antiderivative)
 - [Advection equation](src/data_driven/advection)
 - [Burgers' equation](src/data_driven/burgers)
 
 ### Physics-informed
-- [Antiderivative](src/physics_informed/ode/)
+- [Antiderivative](src/physics_informed/antiderivative/)
 - [Poisson's equation](src/physics_informed/poisson/)
 
 ## Cite this work
