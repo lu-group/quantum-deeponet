@@ -25,14 +25,18 @@
 If you use this data or code for academic research, you are encouraged to cite the following paper:
 
 ```
-@misc{xiao2024quantumdeeponetneuraloperators,
-      title         =  {Quantum DeepONet: Neural operators accelerated by quantum computing}, 
-      author        =  {Pengpeng Xiao and Muqing Zheng and Anran Jiao and Xiu Yang and Lu Lu},
-      year          =  {2024},
-      eprint        =  {2409.15683},
-      archivePrefix =  {arXiv},
-      primaryClass  =  {quant-ph},
-      url           =  {https://arxiv.org/abs/2409.15683}, 
+@article{Xiao2025quantumdeeponet,
+  doi = {10.22331/q-2025-06-04-1761},
+  url = {https://doi.org/10.22331/q-2025-06-04-1761},
+  title = {Quantum {D}eep{ON}et: {N}eural operators accelerated by quantum computing},
+  author = {Xiao, Pengpeng and Zheng, Muqing and Jiao, Anran and Yang, Xiu and Lu, Lu},
+  journal = {{Quantum}},
+  issn = {2521-327X},
+  publisher = {{Verein zur F{\"{o}}rderung des Open Access Publizierens in den Quantenwissenschaften}},
+  volume = {9},
+  pages = {1761},
+  month = jun,
+  year = {2025}
 }
 ```
 
