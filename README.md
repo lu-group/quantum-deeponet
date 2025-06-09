@@ -2,11 +2,11 @@
 
 # Quantum DeepONet: Neural operators accelerated by quantum computing
 
-The data and code for the paper [P. Xiao, M. Zheng, A. Jiao, X. Yang, & L. Lu. Quantum DeepONet: Neural operators accelerated by quantum computing. *Quantum*, 9, 1761, 2025.](https://doi.org/10.22331/q-2025-06-04-1761).
+The data and code for the paper [P. Xiao, M. Zheng, A. Jiao, X. Yang, & L. Lu. Quantum DeepONet: Neural operators accelerated by quantum computing. *Quantum*, 9, 1761, 2025.](https://doi.org/10.22331/q-2025-06-04-1761)
 
 ## Datasets
 
-Data generation scripts are available in the [data](data) folder:
+Data generation scripts are available in the [`data`](data) folder:
 
 - [Antiderivative](data/ode_generation.py)
 - [Poisson's equation](data/poisson_generation.py)
