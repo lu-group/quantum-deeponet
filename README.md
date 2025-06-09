@@ -6,7 +6,7 @@ The data and code for the paper [P. Xiao, M. Zheng, A. Jiao, X. Yang, & L. Lu. Q
 
 ## Datasets
 
-Data generation scripts are available in the [`data`](data) folder:
+Data generation scripts are available in the [data](data) folder:
 
 - [Antiderivative](data/ode_generation.py)
 - [Poisson's equation](data/poisson_generation.py)
