@@ -1,7 +1,0 @@
-*.npz
-*.ipynb
-__pycache__/
-*.png
-classical_advection.py 
-classical_burgers.py
-results/
