@@ -58,11 +58,11 @@ If you use this data or code for academic research, you are encouraged to cite t
 
 ```
 @article{Xiao2025quantumdeeponet,
-  author  = {Xiao, Pengpeng and Zheng, Muqing and Jiao, Anran and Yang, Xiu and Lu, Lu}},
+  author  = {Xiao, Pengpeng and Zheng, Muqing and Jiao, Anran and Yang, Xiu and Lu, Lu},
   title   = {Quantum {D}eep{ON}et: {N}eural operators accelerated by quantum computing}, 
   journal = {{Quantum}},
   volume  = {9},
-  number  = {1},
+  number  = {},
   pages   = {1761},
   year    = {2025},
   doi     = {https://doi.org/10.22331/q-2025-06-04-1761}
